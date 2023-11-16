@@ -65,3 +65,76 @@
   margin-right: auto;
   border-radius: 15px;
 }
+
+.row_mt-3,
+.card-text {
+  font-style: italic;
+}
+
+.row {
+  justify-content: center;
+  align-items: center;
+}
+
+.card-title {
+  text-align: center;
+  font-weight: 400;
+}
+
+#contacto {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.imageAboutPage {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.social-icons {
+  font-size: 36px;
+  cursor: pointer;
+  color: #333;
+}
+
+.fa-facebook:hover,
+.fa-instagram:hover,
+.fa-twitter:hover,
+.fa-linkedin:hover,
+.fa-twitch:hover {
+  color: #008000;
+}
+
+.fab {
+  color: #333;
+}
+
+#footer {
+  background-color: #555;
+  text-align: center;
+  color: #fff;
+  padding: 2rem 0;
+}
+
+@media (max-width: 576px) {
+
+  #about,
+  #portfolio,
+  #contacto {
+    width: 100%;
+  }
+
+  .hero_title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero_desc {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .social-icons {
+    font-size: 20px;
+  }
+}
