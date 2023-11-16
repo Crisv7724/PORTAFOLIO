@@ -1,50 +1,147 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <title>Portfolio Cristobal</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="style.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <title>Portafolio Cristobal</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" />
+  <script src="https://kit.fontawesome.com/8aabe8c22e.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark navbarScroll">
-        <div class="container">
-            <a class="navbar-brand" href="#">Cristobal Varela</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">Acerca de mi</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#portafolio">Portafolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                </ul>
+  <nav class="navbar navbar-expand-lg fixed-top navbar-dark navbarScroll">
+    <div class="container">
+      <a class="navbar-brand" href="#">Cristobal</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">Acerca de mí</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">Portafolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacto">Contáctame</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-            </div>
+  <section class="bgimage" id="home">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
+          <h2 class="hero_title section-title">Bienvenidos</h2>
+          <p class="hero_desc">
+            Aquí encontrarás información acerca de mi trabajo realizado hasta
+            ahora, mis motivaciones y aprendizajes.
+          </p>
         </div>
-    </nav>
-    <section class="bgimage" id="home">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
-            <h2 class="hero_title">Bienvenidos!</h2>
-            <p class="hero_desc">Esta pagina es mi portafolio personal</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container mt-4 pt-4">
+      <h1 class="text-center section-title">Acerca de mi</h1>
+      <div class="row mt-4">
+        <div class="col-md-4">
+          <img src="assets/xipo.jpg" class="imageAboutPage" alt="" />
+        </div>
+        <div class="col-md-8">
+          <div class="row_mt-3">
+            <div class="col-md-6">
+              <ul>
+                <li>Nombre: Cristobal Varela</li>
+                <li>Edad: 31 años</li>
+                <li>Ocupación: Despachador aeronáutico y estudiante.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="row_mt-3">
+            <p>
+              Soy Cristobal, nacido en Santiago de Chile pero actualmente
+              residiendo en Nueva Zelanda. Recientemente empleado de una
+              fábrica de productos lácteos y estudio a medio tiempo para poder
+              darle un giro a mi carrera. Me formé como profesional
+              aeronáutico pero debido a la pandemia pasada he decido darle un
+              cambio al campo en el cual me desempeño. Comencé mi bootcamp de
+              desarrollo Web Full Stack, sin embargo no lo terminé ya que
+              solicité el cambio a Analisis de datos; por motivos curriculares
+              estoy haciendo este portafolio para poder continuar con el curso
+              anteriormente mencionado. De mis aprendizajes, pude alcanzar a
+              conocer el uso de HTML- CSS - JavaScrip para el desarrollo web
+              de paginas, así también pude aplicar en parte algo de logica de
+              programación lo cual me ha servido para entender de mejor manera
+              el nuevo lenguaje que estoy utilizando en Analisis de datos. Sin
+              duda alguna el haberme introducido en el mundo de la
+              programación con estos proyectos me deja satisfecho por que si
+              bien no terminé el primer Bootcamp, voy ahora de lleno a lograr
+              alcanzar la certificación como Analista de Datos.
+            </p>
           </div>
         </div>
       </div>
-    </section>
-    <script src="script/script.js"></script>
-  </body>
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <div class="container mt-3">
+      <h1 class="text-center section-title">Portafolio</h1>
+      <div class="row">
+        <div class="col-lg-4 mt-4">
+          <div class="card">
+            <img class="card-img-top" src="assets/Gopro.JPG" alt="Card image" style="width: 100%" />
+            <div class="card-body">
+              <h4 class="card-title">GoPro Home Clone</h4>
+              <p class="card-text">
+                Clon de la pagina de inicio de GoPro, mi primer proyecto
+                utilizando HTML/CSS
+              </p>
+              <div class="text-center">
+                <a href="#" class="btn btn-success">Link</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 mt-4">
+          <div class="card portfolioContent">
+            <img class="card-img-top" src="assets/Crud.JPG" alt="Card" style="width: 100%" />
+            <div class="card-body">
+              <h4 class="card-title">CRUD</h4>
+              <p class="card-text">
+                Este fue mi primer CRUD con JavaScrip, acrónimo de las
+                funciones "Crear, Leer, Actualizar y Borrar".
+              </p>
+              <div class="text-center">
+                <a href="#" class="btn btn-success">Link</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto">
+  </section>
+
+  <footer id="footer">
+  </footer>
+
+  <script src="script/script.js"></script>
+
+</body>
 </html>
